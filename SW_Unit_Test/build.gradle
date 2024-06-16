@@ -16,7 +16,7 @@ test {
 
 tasks.compileJava {
     options.encoding = 'UTF-8'
-    destinationDirectory = file('classes')
+    outputDir = file('classes')
 }
 
-sourceSets.main.java.srcDirs = ['SW_Practice/SW_Unit_Test/src']
+sourceSets.main.java.srcDirs = ['src']
