@@ -19,4 +19,4 @@ tasks.compileJava {
     destinationDirectory = file('classes')
 }
 
-sourceSets.main.java.srcDirs = ['SW_Practice/src']
+sourceSets.main.java.srcDirs = ['SW_Practice/SW_Unit_Test/src']
