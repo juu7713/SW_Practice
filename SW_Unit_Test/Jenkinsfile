@@ -10,12 +10,7 @@ pipeline {
    }
    stage('Build') {
     steps {
-     script {
-      // Find all Java source files and save the paths to sources.txt
-      bat 'dir /s /b SW_Practice\\src\\*.java > sources.txt'
-      // Compile the Java sources listed in sources.txt
-      bat 'javac -encoding UTF-8 -d classes @sources.txt'
-     }
+     bat 'javac -encoding UTF-8 -d classes SW_Practice/SW_Unit_Test/src/**/*.java'
     }
    }
    stage('Test') {
